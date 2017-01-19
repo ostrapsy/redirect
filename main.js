@@ -99,7 +99,7 @@ $(function() {
 	  $("#profiles2").append(html);
 	  var tpl = $('#newtmp2').html(),html = Mustache.to_html(tpl, others3);
 	  $("#profiles2").append(html);
-	 
+	  $(window).unbind('beforeunload');
 	  var names = ['Arjen','AncaD','Sarah','Jane',];
 	  //var times = [6000,12000,19000,28000];
 	  var times = [6000,10000,12000,25000];
