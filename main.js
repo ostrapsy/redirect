@@ -83,9 +83,10 @@ $(function() {
 		setTimeout(function() {
   			//$('#msg_all_done').show();
   			$("#loader").hide();
+			$('#after_task').hide();
+			init_profiles2();
   		}, 4000);
-		$('#after_task').hide();
-		init_profiles2();
+		
 	});
   }
 	
