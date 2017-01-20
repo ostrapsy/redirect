@@ -79,7 +79,7 @@ $(function() {
 	$('#after_task').show();
 	
   	$('#submit_after_task').on('click',function() {
-		$("#loader").show();
+		$("#loader1").show();
 		setTimeout(function() {
   			//$('#msg_all_done').show();
   			$("#loader").hide();
