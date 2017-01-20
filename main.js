@@ -77,7 +77,13 @@ $(function() {
   function init_after_task() {
 
 	$('#after_task').show();
+	
   	$('#submit_after_task').on('click',function() {
+		$("#loader").show();
+		setTimeout(function() {
+  			//$('#msg_all_done').show();
+  			$("#loader").hide();
+  		}, 4000);
 		$('#after_task').hide();
 		init_profiles2();
 	});
