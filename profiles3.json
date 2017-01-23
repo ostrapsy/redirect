@@ -36,7 +36,7 @@ window.others3 = {
       {
         "avatar": "avatars/others/jane.png",
         "username": "Jane",
-	"userage": "46",
+	"userage": "36",
 	"usergender": "female",
 	"userpolitic": "physical exercise, reading and socializing",
 	"shownlikes": "4",
