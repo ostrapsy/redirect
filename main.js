@@ -32,7 +32,7 @@ $(function() {
 	
 	// **Tasklength**     
     // Length of the group introduction task in milliseconds. Can be changed to any number (in ms). Default: 180000 (3min) 
-    settings.tasklength = 30000; 
+    settings.tasklength = 60000; 
 
 	
 	// **Number** **of** **"likes"**    
@@ -95,7 +95,7 @@ $(function() {
 	  $('#profiles2').show();
 	  // Nedan nytt
 	  jQuery("#countdown1").countDown({
-  		startNumber: 45, // in seconds
+  		startNumber: 60, // in seconds
   		callBack: function(me) {
   			console.log('over');
           $('#timer').text('00:00');
