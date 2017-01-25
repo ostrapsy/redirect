@@ -136,7 +136,7 @@ $(function() {
   				alertify.success(themsg1)
   			}, times[2]);
 	  }
-	  document.getElementById("link").href = window.redirect+'&p='+window.participant+'&c='+window.condition+'&u='+encodeURI(window.username)+'&av='+window.avatarexport+'&d='+encodeURI(window.description);
+	  document.getElementById("link").href = window.redirect+'&p='+window.participant+'&c='+window.condition+'&u='+encodeURI(window.username)+'&av='+window.avatarexport+'&d='+encodeURI(window.description)+'&click='+window.linkClick;
 	  setTimeout(function() {
     
    	 //$(window).unbind('beforeunload');
@@ -146,7 +146,8 @@ $(function() {
    	  $('#timer1').text('00:00');
     
    	  $('#continue1').on('click',function() {
-		location.href = window.redirect+'&p='+window.participant+'&c='+window.condition+'&u='+encodeURI(window.username)+'&av='+window.avatarexport+'&d='+encodeURI(window.description);
+		window.linkClick = 0;
+		location.href = window.redirect+'&p='+window.participant+'&c='+window.condition+'&u='+encodeURI(window.username)+'&av='+window.avatarexport+'&d='+encodeURI(window.description)+'&click='+window.linkClick;
 	  });
     
    	  },45000);
@@ -533,7 +534,10 @@ $(function() {
 	  
   }
   
-
+  // Setting the OnLinkClick to 1. This gets changed to 0 if Continue button at end of experiment is clicked
+  // instead of the link.
+  window.linkClick = 1;
+	
   // The variable QueryString contains the url parameters, i.e. condition no. and participant no.
   // via http://stackoverflow.com/a/979995
   window.QueryString = function () {
