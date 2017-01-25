@@ -109,7 +109,7 @@ $(function() {
 	  $(window).unbind('beforeunload');
 	  var names = ['Arjen','AncaD','Sarah','Jane',];
 	  //var times = [6000,12000,19000,28000];
-	  var times = [6000,10000,12000,25000];
+	  var times = [15000,21000,28000,39000];
 	  //var antal = 4;
 	  //var index = 0;
 	  
