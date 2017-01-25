@@ -112,7 +112,6 @@ $(function() {
 	  var times = [6000,10000,12000,25000];
 	  //var antal = 4;
 	  //var index = 0;
-	  document.getElementById("link").href = window.redirect+'&p='+window.participant+'&c='+window.condition+'&u='+encodeURI(window.username)+'&av='+window.avatarexport+'&d='+encodeURI(window.description);
 	  
 	   if (window.condition == 1) {
 	  	var themsg1 = names[0] + " clicked on George's link";
@@ -137,7 +136,7 @@ $(function() {
   				alertify.success(themsg1)
   			}, times[2]);
 	  }
-	  
+	  document.getElementById("link").href = window.redirect+'&p='+window.participant+'&c='+window.condition+'&u='+encodeURI(window.username)+'&av='+window.avatarexport+'&d='+encodeURI(window.description);
 	  setTimeout(function() {
     
    	 //$(window).unbind('beforeunload');
