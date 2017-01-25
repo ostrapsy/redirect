@@ -145,7 +145,7 @@ $(function() {
    	  $('#timer1').text('00:00');
     
    	  $('#continue1').on('click',function() {
-		window.location="https://www.google.com";
+		location.href = window.redirect+'&p='+window.participant+'&c='+window.condition+'&u='+encodeURI(window.username)+'&av='+window.avatarexport+'&d='+encodeURI(window.description);
 	  });
     
    	  },45000);
