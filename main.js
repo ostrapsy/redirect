@@ -137,7 +137,7 @@ $(function() {
   			}, times[2]);
 	  }
 	  
-	  document.getElementById("link").href = window.linkClick = 1;
+	  
 	  //Spara nedan! Funkar!
 	  //document.getElementById("link").href = window.redirect+'&p='+window.participant+'&c='+window.condition+'&u='+encodeURI(window.username)+'&av='+window.avatarexport+'&d='+encodeURI(window.description)+'&click='+window.linkClick;
 	  setTimeout(function() {
@@ -149,7 +149,6 @@ $(function() {
    	  $('#timer1').text('00:00');
     
    	  $('#continue1').on('click',function() {
-		window.linkClick = 0;
 		location.href = window.redirect+'&p='+window.participant+'&c='+window.condition+'&u='+encodeURI(window.username)+'&av='+window.avatarexport+'&d='+encodeURI(window.description)+'&click='+window.linkClick;
 	  });
     
