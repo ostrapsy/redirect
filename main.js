@@ -70,8 +70,7 @@ $(function() {
   	$('#intro').show();
   	$('#submit_intro').on('click',function() {
 			$('#intro').hide();
-  			//init_name(); 
-			window.open('https://soutkari.github.io/pol_conf/index1.html',width=500,height=500);
+  			init_name(); 
   	});	
   }
 	
