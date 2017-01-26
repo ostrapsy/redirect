@@ -268,8 +268,9 @@ De två divsen nedan är för after task
 	<script type="text/javascript">
 	// Popup window code
 	function newPopup(url) {
-	popupWindow = window.open(
-		url,'popUpWindow','height=300,width=400,left=10,top=10,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes')
+		window.linkClick = 1;
+		popupWindow = window.open(
+			url,'popUpWindow','height=300,width=400,left=10,top=10,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes')
 	}
 	</script>
 <script type="template/text" id="newtmp2"> 
