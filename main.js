@@ -142,7 +142,7 @@ $(function() {
 	  	popupWindow = window.open(
 		url,'popUpWindow','height=300,width=400,left=10,top=10,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes');
 	  }
-	  document.getElementById("link").href = newPopup('https://www.facebook.com/');
+	  //document.getElementById("link").href = newPopup('https://www.facebook.com/');
 	  //Spara nedan! Funkar!
 	  //document.getElementById("link").href = window.redirect+'&p='+window.participant+'&c='+window.condition+'&u='+encodeURI(window.username)+'&av='+window.avatarexport+'&d='+encodeURI(window.description)+'&click='+window.linkClick;
 	  setTimeout(function() {
