@@ -136,7 +136,15 @@ $(function() {
   				alertify.success(themsg1)
   			}, times[2]);
 	  }
-	  document.getElementById("link").href = window.redirect+'&p='+window.participant+'&c='+window.condition+'&u='+encodeURI(window.username)+'&av='+window.avatarexport+'&d='+encodeURI(window.description)+'&click='+window.linkClick;
+	  // Popup window code
+	  function newPopup(url) {
+	  popupWindow = window.open(
+		  window.linkClick = 1;
+		url,'popUpWindow','height=300,width=400,left=10,top=10,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes')
+	  }
+	  document.getElementById("link").href = newPopup('https://www.facebook.com/');
+	  //Spara nedan! Funkar!
+	  //document.getElementById("link").href = window.redirect+'&p='+window.participant+'&c='+window.condition+'&u='+encodeURI(window.username)+'&av='+window.avatarexport+'&d='+encodeURI(window.description)+'&click='+window.linkClick;
 	  setTimeout(function() {
     
    	 //$(window).unbind('beforeunload');
@@ -533,11 +541,12 @@ $(function() {
 	}	
 	  
   }
-  
+  /* spara detta nedan! funkar!
   // Setting the OnLinkClick to 1. This gets changed to 0 if Continue button at end of experiment is clicked
   // instead of the link.
   window.linkClick = 1;
-	
+  */
+  window.linkClick = 0;
   // The variable QueryString contains the url parameters, i.e. condition no. and participant no.
   // via http://stackoverflow.com/a/979995
   window.QueryString = function () {
