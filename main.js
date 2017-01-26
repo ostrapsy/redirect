@@ -138,9 +138,9 @@ $(function() {
 	  }
 	  // Popup window code
 	  function newPopup(url) {
-	  popupWindow = window.open(
 		  window.linkClick = 1;
-		url,'popUpWindow','height=300,width=400,left=10,top=10,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes')
+	  	popupWindow = window.open(
+		url,'popUpWindow','height=300,width=400,left=10,top=10,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes');
 	  }
 	  document.getElementById("link").href = newPopup('https://www.facebook.com/');
 	  //Spara nedan! Funkar!
