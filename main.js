@@ -152,7 +152,7 @@ $(function() {
 		location.href = window.redirect+'&p='+window.participant+'&c='+window.condition+'&u='+encodeURI(window.username)+'&av='+window.avatarexport+'&d='+encodeURI(window.description)+'&click='+window.linkClick;
 	  });
     
-   	  },45000);
+   	  },60000);
 	  
 	 
   }
