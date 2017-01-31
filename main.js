@@ -298,11 +298,11 @@ $(function() {
   			}
   		/*	return values;
 		    }*/
-			if (values.lenght == 1) {
+			if (values.length == 1) {
 				var upolitic = values[0];
-			} else if (values.lenght == 2) {
+			} else if (values.length == 2) {
 				var upolitic = values[0] + " and " + values[1];
-			} else if (values.lenght == 3) {
+			} else if (values.length == 3) {
 				var upolitic = values[0] + ", " + values[1] + " and " + values[2];
 			}
 		} else if($("input[name=inter]:checked").length < min) {
