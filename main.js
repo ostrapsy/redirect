@@ -195,7 +195,7 @@ $(function() {
 
 	
   // All the demographic data
-	  
+/*	  
   function init_demo() {
 
 	$('#demo').show();
@@ -217,6 +217,76 @@ $(function() {
 		var min = 3;
   			
 		if ($("input[name=inter]:checked").length == min) {           
+		   
+  			var values = [];
+  			var inters = interForm.inter;
+
+  			for (var i=0, iLen=inters.length; i<iLen; i++) {
+    				if (inters[i].checked) {
+      					values.push(inters[i].value);
+    				}
+  			}
+  		
+			var upolitic = values[0] + ", " + values[1] + " and " + values[2];
+		} else if($("input[name=inter]:checked").length != min) {
+			error = 1;
+			errormsg = 'Please state three interests';
+			upolitic ='undefined';
+		}
+		
+		if ($('input[name="gender"]:checked').val() != null) {           
+		   var ugender = $('input[name="gender"]:checked').val();
+		} else if($('input[name="gender"]:checked').val() == null) {
+			error = 1;
+			errormsg = 'Please state your gender';
+			ugender ='undefined';
+		}
+
+  		if(uage == "") {
+  			error = 1;
+  			errormsg = 'Please enter your age';
+  			uage = "undefined";
+  		} else if(isNaN(uage)) {
+  			error = 1;
+  			errormsg = 'Please enter your age using numbers only';
+  		}  
+
+  		if(error == 0) {
+			$('#demo').hide();
+			window.age = uage;
+			window.gender = ugender;
+			window.politic = upolitic;
+  			init_avatar();  			
+  		} else {
+  			alertify.log(errormsg,"error");
+  		}
+
+
+  	});
+  }
+  */
+	
+  function init_demo() {
+
+	$('#demo').show();
+	  
+	$("input[name=inter]").change(function(){
+    		var max= 3;
+    		if( $("input[name=inter]:checked").length == max ){
+        		$("input[name=inter]").attr('disabled', 'disabled');
+        		$("input[name=inter]:checked").removeAttr('disabled');
+    		}else{
+         		$("input[name=inter]").removeAttr('disabled');
+   		 }
+	});
+	  
+  	$('#submit_demo').on('click',function() {
+
+  		var error = 0;
+  		var uage = $('#age').val();
+		var min = 1;
+  			
+		if ($("input[name=inter]:checked").length >= min) {           
 		   /*function getCheckboxValues(interForm) {*/
   			var values = [];
   			var inters = interForm.inter;
@@ -228,10 +298,16 @@ $(function() {
   			}
   		/*	return values;
 		    }*/
-			var upolitic = values[0] + ", " + values[1] + " and " + values[2];
-		} else if($("input[name=inter]:checked").length != min) {
+			if (values.lenght == 1) {
+				var upolitic = values[0];
+			} else if (values.lenght == 2) {
+				var upolitic = values[0] + " and " + values[1];
+			} else if (values.lenght == 3) {
+				var upolitic = values[0] + ", " + values[1] + " and " + values[2];
+			}
+		} else if($("input[name=inter]:checked").length < min) {
 			error = 1;
-			errormsg = 'Please state three interests';
+			errormsg = 'Please at least one interest';
 			upolitic ='undefined';
 		}
 		
