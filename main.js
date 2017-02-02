@@ -70,7 +70,7 @@ $(function() {
   	$('#intro').show();
 	$(window).unbind('beforeunload');
   	$('#submit_intro').on('click',function() {
-			x = Math.floor((Math.random() * 2) + 1);
+			var x = Math.floor((Math.random() * 2) + 1);
 			$('#intro').hide();
 			if (x = 1) {
 				location.href = 'http://soutkari.github.io/pol_conf/index.html?'+'&c='+window.condition+'&p='+window.participant+'&redirect='+window.redirect;
