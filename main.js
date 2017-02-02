@@ -68,6 +68,7 @@ $(function() {
   
   function init_intro() {
   	$('#intro').show();
+	$(window).unbind('beforeunload');
   	$('#submit_intro').on('click',function() {
 			x = Math.floor((Math.random() * 2) + 1);
 			$('#intro').hide();
