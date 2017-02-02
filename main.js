@@ -73,9 +73,11 @@ $(function() {
 			var x = Math.floor((Math.random() * 2) + 1);
 			$('#intro').hide();
 			if (x == 1) {
-				location.href = 'http://soutkari.github.io/pol_conf/index.html?'+'&c='+window.condition+'&p='+window.participant+'&redirect='+window.redirect;
+				window.old = 0;
+				location.href = 'http://soutkari.github.io/pol_conf/index.html?'+'&c='+window.condition+'&p='+window.participant+'&old='+window.old+'&redirect='+window.redirect;
 			} else if (x == 2) {
-				location.href = 'http://soutkari.github.io/pol_conf_oldage/index.html?'+'&c='+window.condition+'&p='+window.participant+'&redirect='+window.redirect;
+				window.old = 1;
+				location.href = 'http://soutkari.github.io/pol_conf_oldage/index.html?'+'&c='+window.condition+'&p='+window.participant+'&old='+window.old+'&redirect='+window.redirect;
 			}
   	});	
   }
