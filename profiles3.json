@@ -8,7 +8,7 @@ window.others3 = {
         "username": "AncaD",
 	"userage": "29",
 	"usergender": "female",
-	"userpolitic": "cooking, technology and reading",
+	"userpolitic": "football, technology and reading",
 	"shownlikes": "5",
         "text": "I am a Computer Science student, interested in Natural Language processing. Also a lover of loose leaf tea and a Semantic Web enthusiast. As weird as that makes me sound, I'm otherwise actually quite normal. I like to hang out with friends and family. And of course, I never miss a Chelsea game!",
         "likes": [10000, 12000, 40000, 80000, 120000] //5
