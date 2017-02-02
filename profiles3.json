@@ -10,7 +10,7 @@ window.others3 = {
 	"usergender": "female",
 	"userpolitic": "cooking, technology and reading",
 	"shownlikes": "5",
-        "text": "I am a Computer Science student, interested in Natural Language processing. Also a lover of loose leaf tea and a Semantic Web enthusiast.",
+        "text": "I am a Computer Science student, interested in Natural Language processing. Also a lover of loose leaf tea and a Semantic Web enthusiast. As weird as that makes me sound, I'm otherwise actually quite normal. I like to hang out with friends and family. And of course, I never miss a Chelsea game!",
         "likes": [10000, 12000, 40000, 80000, 120000] //5
       },
       {
@@ -20,7 +20,7 @@ window.others3 = {
 	"usergender": "female",
 	"userpolitic": "music, physical exercise and socializing",
 	"shownlikes": "5",
-        "text": "Let me introduce myself. I’m Sarah, a midwife, who when I'm not working (which I do a lot since I just love my job) spend a lot of time my hobbies, such as singing, reading, and playing volleyball.",
+        "text": "Let me introduce myself. Im Sarah, a midwife. I just love my job, its the best! When Im not working (which is a lot) I spend a lot of time my hobbies, such as singing, reading, and playing volleyball. Im quite new to this online study stuff. Its a gamble though innit? Some are really fun and challenging and some will bore you to death. xo",
         "likes": [12000, 14000,15000,35000,80000,100000,110000,150000,20000] //9
       },
       {
@@ -30,7 +30,7 @@ window.others3 = {
 	"usergender": "male",
 	"userpolitic": "technology, reading and gaming",
 	"shownlikes": "3",
-        "text": "My name is Arjen, I study Artificial Intelligence. I like to use my free time to make all kinds of different things... Im kind of a nerd too, I guess.",
+        "text": "My name is Arjen, I study Artificial Intelligence. I like to use my free time to make all kinds of different things... Mostly these has to do with my passion for computers and low-level programming languages. My ultimate goal in life would be to create the worlds first synthetic consciousness. As you guessed, Im what you would call a huge nerd, but perhaps not as awkward as most! :)",
         "likes": [12000, 17000, 24000] //3
       },
       {
@@ -40,7 +40,7 @@ window.others3 = {
 	"usergender": "female",
 	"userpolitic": "physical exercise, reading and socializing",
 	"shownlikes": "4",
-        "text": "Dear all, my name is Jane and I will soon have an important interview. This is all I can think about these days. I hope youre doing well.",
+        "text": "Dear all, my name is Jane and I will soon have an important interview. This is literally the only thing I can think about these days. :) I'll leave it at that. I hope youre doing well.",
         "likes": [10000, 15000, 24000, 28000] //4
       },
     ]
