@@ -523,11 +523,11 @@ $(function() {
     } else {
 	  window.redirect = window.settings.defaultredirect;
 	}
-	
+	/*
 	var urlHasQuestionMark = (window.redirect.indexOf("?") > -1);
 	if(!urlHasQuestionMark) {
 		window.redirect = window.redirect+"?redir=1";
-	}
+	}*/
 	//alert(window.redirect);
 
   }
