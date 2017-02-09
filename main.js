@@ -74,10 +74,12 @@ $(function() {
 			$('#intro').hide();
 			if (x == 1) {
 				window.old = 0;
-				location.href = 'http://soutkari.github.io/pol_conf/index.html?'+'&c='+window.condition+'&p='+window.participant+'&old='+window.old+'&redirect='+window.redirect;
+				//location.href = 'http://soutkari.github.io/pol_conf/index.html?'+'&c='+window.condition+'&p='+window.participant+'&old='+window.old+'&redirect='+window.redirect;
+				location.href = 'http://soutkari.github.io/pol_conf_sv/index.html?'+'&c='+window.condition+'&p='+window.participant+'&old='+window.old+'&redirect='+window.redirect;
 			} else if (x == 2) {
 				window.old = 1;
-				location.href = 'http://soutkari.github.io/pol_conf_oldage/index.html?'+'&c='+window.condition+'&p='+window.participant+'&old='+window.old+'&redirect='+window.redirect;
+				//location.href = 'http://soutkari.github.io/pol_conf_oldage/index.html?'+'&c='+window.condition+'&p='+window.participant+'&old='+window.old+'&redirect='+window.redirect;
+				location.href = 'http://soutkari.github.io/pol_conf_oldage_sv/index.html?'+'&c='+window.condition+'&p='+window.participant+'&old='+window.old+'&redirect='+window.redirect;
 			}
   	});	
   }
